@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    color: white;
+    background-color: #333;
+    padding: 20px;
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+#cadastro, #pesquisa {
+    width: 40%;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 40%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+    background-color: #333;
+    cursor: pointer;
+}
+
+
+
+#msg-cadastro, #msg-pesquisa {
+    width: 100%;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#resultado {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#resultado table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#resultado th, #resultado td {
+    border: 1px solid #333;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+
+#resultado th {
+    background-color: #333;
+    color: white;
+}
+
+.suggestions-container {
+    position: absolute;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 1000;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+.wrapper{
+    max-width: 450px;
+    margin: 150px auto;
+  }
+  .search-input input{
+    height: 55px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+  } 
+  
+  .search-input.active input{
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .search-input .suggestions-container{
+
+    pointer-events: none;
+    max-height: 280px;
+    overflow-y: auto;
+  }
+  
+  .search-input.active .suggestions-container{
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .suggestions-container li{
+    list-style: none;
+    padding: 8px 12px;
+    display: none;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+  }
+  
+  .search-input.active .suggestions-container li{
+    display: block;
+  }
+  .suggestions-container li:hover{
+    background: #dddddd;
+  }
+  
+  .search-input .icon{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 20px;
+    color: #e4ff4b;
+    cursor: pointer;
+  }
+
+  .tooltip-styles {
+    /* All the initial classes applied to tooltip plus */
+    visibility: hidden; /* Initially hides the tooltip */
+}
+.tooltip-styles.visible {
+    visibility: visible; /* Show the tooltip when this class is added */
+}
